@@ -61,30 +61,21 @@ LINEなどのやり取りで明確な商品を伝えるとなると、商品名�
 * 買い物メモの価格記録
 * 登録した買い物メモの検索機能
 
-
 ## ■ 機能の実装方針予定
-### マルチ検索・オートコンプリート
-概要
-食べログの検索フォームのような、様々なカラムから検索可能な検索フォームです。1文字入力するたびに、候補が表示されるため、ユーザーの入力手間を減らし、入力ミスを減らすことができます。
-
-使用技術・ライブラリ
-Stimulus Autocomplete（Rails7 ）
-https://github.com/afcapel/stimulus-autocomplete
-JQuery
-https://github.com/xpeppers/rails-autocomplete
-
-### 通知
-概要
-FacebookやTwitterでもおなじみの通知機能があります。その人に関連するお知らせをリアルタイムで通知することで、ユーザーの行動を促し、アクティブ率を向上させます。
-
-使用技術・ライブラリ
-WebSocket通信・ActionCable（Rails標準）
-
-### LINE通知
-概要
-Webプッシュはまだ普及しておらず、アプリのプッシュ通知を利用したい方には、LINEプッシュ通知がおすすめです。簡単な連携で、自分の好きなタイミングにLINEを通じてプッシュ通知を行うことができます。
-
-使用技術・ライブラリ
-LINE Messaging API
-LINE Messaging API SDK for Ruby
-https://github.com/line/line-bot-sdk-ruby
+### バックエンド
+* Ruby: 3.0系
+* Rails: 7.0系
+* データベース: PostgreSQL (version: 13.4)
+### フロントエンド
+* JavaScript: ES6
+* フレームワーク: Stimulus
+### インフラストラクチャ
+* ホスティング: Heroku
+* 画像ストレージ: Amazon S3
+### API & サードパーティ
+* 商品検索・画像取得: Amazon Product Advertising API
+* LINE通知: LINE Messaging API
+### その他ライブラリ
+* オートコンプリート: Stimulus Autocomplete (for Rails 7)
+* 通知: WebSocket通信・ActionCable (Rails標準)
+* LINE通知: LINE Messaging API SDK for Ruby
