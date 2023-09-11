@@ -79,3 +79,7 @@ LINEなどのやり取りで明確な商品を伝えるとなると、商品名�
 * オートコンプリート: Stimulus Autocomplete (for Rails 7)
 * 通知: WebSocket通信・ActionCable (Rails標準)
 * LINE通知: LINE Messaging API SDK for Ruby
+
+
+### 画面遷移図
+Figma：https://www.figma.com/file/7rDmjfvV2IsPv6pTgUknl5/kaimemo?type=whiteboard&node-id=0%3A1&t=LFtZ2ACzjBsCfjPT-1
